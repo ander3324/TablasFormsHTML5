@@ -1,0 +1,222 @@
+/*
+Hoja de estilo en cascada usada para la plantilla
+del curso JAVA Enterprise - 2015 
+*/
+/* 
+    Created on : 22/04/2015, 11:55:56
+    Author     : ander
+*/
+
+
+
+/*Selector Universal*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Estilo para los titulos...*/
+h1{
+    font: bold 20px verdana, sans-serif;
+    color: dimgray;
+    padding: 5px;
+}
+
+h2{
+    font: bold 16px verdana, sans-serif;
+    color: lightslategrey;
+    padding: 5px;
+}
+
+/*MOSTRAR LOS ELEMENTOS COMO BLOCK*/
+header, section, footer, aside, nav, 
+article, figure, figcaption, hgroup
+{
+    display: block;
+} 
+
+body{
+    text-align: center;
+    font: normal 13px verdana, sans-serif;
+    color: darkslategrey;
+}
+
+/*Agrupar los elementos correctamente en pantalla*/
+#agrupar{
+    width: 960px;
+    margin:15px auto;
+    text-align: left;
+}
+
+/*Estilo de cabecera*/
+#cabecera{
+    background: ghostwhite;
+    border: 1px solid #CCCCCC;
+    padding: 20px;
+}
+
+/*Menus y elementos*/
+#menu{
+    background: beige;
+    padding: 5px 15px;
+    border-right:1px solid #CCCCCC; 
+    border-left: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+}
+#menu li{
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    font: bold 14px verdana, sans-serif; 
+}
+
+
+
+/*Información principal y secundaria*/
+#seccion{
+    float: left;
+    width: 660px;
+    margin: 20px;
+}
+#columna{
+    float: left;
+    width: 218px;
+    margin: 20px 0px;
+    padding: 20px;
+    border: 1px solid #CCCCCC;
+    background: beige;
+}
+
+/*RESTAURAR EL FLUJO NORMAL DEL DOCUMENTO EN EL PIE*/
+#pie{
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #999999;
+}
+
+/*TRABAJAR UN POCO LOS DEMÁS ELEMENTOS DEL DOCUMENTO*/
+article{
+    background: aliceblue;
+    border: 1px solid #999999;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+article footer{
+    text-align: right;
+}
+time{
+    color: cadetblue;
+    font: bold 11px verdana, sans-serif;
+}
+figcaption{
+    font: italic 12px verdana, sans-serif;
+}
+
+table{
+    width: 100%;
+    border: 1px #999999 solid;
+
+}
+thead{
+    background-color: ghostwhite;
+    padding: 5px;
+
+}
+
+td{
+    border: 1px #999999 double;
+    padding: 5px;
+
+}
+
+/* Efectos de transformación al cuadro */
+#menu li:hover{
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+}
+
+blockquote:hover{
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+}
+
+#titulo
+{
+    font: bold 35px verdana, sans-serif;
+
+    /* Sombras al titulo!!! */
+    text-shadow: rgb(0, 0, 150) 0px 3px 5px;
+
+    /* Nuevo color para el titulo */
+    color: khaki;
+}
+
+#cabecera table{
+    width: 100%;
+    border: none;
+}
+#cabecera td{
+    border: none;
+    padding: 5px;
+
+}
+
+/*REGLAS CSS PARA MEJORAR LA APARIENCIA DE LOS FORMS*/
+
+
+
+input {
+    padding: 3px;
+    margin: 8px;
+}
+
+formulario label {
+    margin: 3px;
+
+}
+
+.btn {
+    display: block;
+    margin: 2px;
+    padding: 3px;
+}
+
+#boton{
+
+    width: 35%;
+    float: right;
+
+}
+
+//Clases para girar los elementos
+
+
+#rotar{
+    transition: 1s ease;
+    -moz-transition: 1s ease; /* Firefox */
+    -webkit-transition: 1s ease; /* Chrome - Safari */
+    -o-transition: 1s ease; /* Opera */
+}
+
+#rotar:hover{
+    transform : rotate(360deg);
+    -moz-transform : rotate(360deg); /* Firefox */
+    -webkit-transform : rotate(360deg); /* Chrome - Safari */
+    -o-transform : rotate(360deg); /* Opera */
+}
+
+.girar {
+    transition: 1s ease;
+    -moz-transition: 1s ease; /* Firefox */
+    -webkit-transition: 1s ease; /* Chrome - Safari */
+    -o-transition: 1s ease; /* Opera */
+}
+.girar:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+
